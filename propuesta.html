@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Pandaku-Propuesta</title>
+    <link href="img/cora.png" rel="shortcut icon" type="image/x-icon" />
+    <script src="https://kit.fontawesome.com/906591f70c.js" crossorigin="anonymous"></script>
+    <link href="css/style.css" rel="stylesheet">
+    <script>
+        function si(){
+            alert('Te Cuidare Y Te Protegere Con Toda Mi Vida <3');
+            window.location.href = "index.html";
+        }
+
+        function mueveElBoton(){
+            width = window.innerWidth;
+            height = window.innerHeight;
+
+            newWidth = (Math.random() * width);
+            newHeight = (Math.random() * height);
+
+            document.getElementById('btnNo').style.position = "absolute";
+            document.getElementById('btnNo').style.left = newWidth + "px";
+            document.getElementById('btnNo').style.top = newHeight + "px";
+
+
+        }
+    </script>
+</head>
+<body>
+  <div class="inicio">
+    <h1>¿Te Gustaria Tener Toda Una Vida Conmigo?</h1>
+    <p>Me Haces una falta terrible, te estoy deseando a todas horas, quisiera tenerte aquí para descansar mi cabeza entre tus brazos y olvidar de todas estas cosas. <strong>¡te deseo tanto!</strong> sueño con verte entrar mientras escribo y a veces  no vuelvo la cabeza cuando escucho el timbre, pensado que eres tu.</p>
+    <div class="center">
+      <input type="button" class="boton" onclick="si()" id="btnSi" value="Shi" />
+      <input type="button" class="boton" id="btnNo" onmouseover="mueveElBoton()" value="Ño" />
+    </div>
+    </div>
+  <div class="card1">
+    <div class="face front">
+      <img src="img/amor17.png" alt="Sobre Ti" >
+      <h3>Vas a Decir que shi</h3>
+    </div>
+    </div>
+</body>
+</html>
